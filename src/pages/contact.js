@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Layout from '../components/layout'
 
 const RootIndex = () => {
@@ -18,6 +19,9 @@ const RootIndex = () => {
                 </div>
             </div>
         </div>
+        <Helmet>
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/21995803.js"></script>
+      </Helmet>
         </Layout>
     );
   }

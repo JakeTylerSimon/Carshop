@@ -22,7 +22,7 @@ const Footer = () => (
             <div className="links">
               <div className="link linkOne">
                 <a href="/">Home</a>
-                <a href="/services">Services</a>
+                <a href="/">Services</a>
                 <a href="/parts">Parts</a>
                 <a href="/contact">Contact</a>
                 <a href="/login">login</a>

@@ -11,7 +11,7 @@ const Navigation = () => {
           <a className='logo' href="/"/>
         </div>
         <ul className="app_navbar-links" >
-          <a className='navbarLinks' href="/services">Services</a>           
+          <a className='navbarLinks' href="/">Services</a>           
           <a className='navbarLinks' href="/parts">Parts</a>    
           <a className='navbarLinks' href="/contact">Contact</a>       
           <a className='navbarLinks' href="/login">login</a>       

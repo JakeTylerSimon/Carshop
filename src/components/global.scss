@@ -978,3 +978,356 @@ textarea{
 		height: 200px;
 	}
 }
+
+//parts CSS
+.blog-wrapper{
+  padding-bottom: 128px;
+  .blogNav{
+    background: #ECF6FA;
+    padding: 154px 150px 29px;
+    background-image: url(/images/cloud_large.png), url(/images/cloud_large.png);
+    background-repeat: no-repeat;
+    background-size: 311px auto, 175px auto;
+    // width: 100%;
+    background-position: left;
+    animation: blogmove 16s ease-in-out infinite;
+    animation-direction: alternate;
+    @keyframes blogmove {
+      from { background-position: 40% 33px, 80% 44px;}
+      to { background-position: 30% 33px, 70% 44px; }
+    }
+    .navContent {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1110px;
+      margin: auto;
+      h4{
+        font-family: 'Hind';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        color: #242424;
+        margin-bottom: 0;
+      }
+      .dropdownMenu {
+        display: none;
+      }
+      .blogLinks{
+        span{
+          margin-left: 40px;
+          font-family: 'Hind';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          color: #242424;
+          cursor: pointer;
+        }
+        .active-tab{
+          padding-bottom: 30px;
+          border-bottom: 2px solid #E60077;
+          color: #E60077;;
+        }
+      }
+    }
+  }
+  .featureList{
+    padding: 0 150px;
+    .feature-articles{
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+      max-width: 1140px;
+      padding-top: 64px;
+      padding-bottom: 65px;
+      .img {
+        align-self: center;
+      }
+      .feature{
+        display: flex;
+        flex-direction: column;
+        max-width: 448px;
+        margin-right: 100px;
+        @media only screen and (max-width: 1000px) {
+          margin-right: 0;
+        }
+      }
+      .mainImg{
+        width: 100%;
+        margin-bottom: 18px;
+      }
+      .title{
+        font-family: 'Hind';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        margin-top: 12px;
+        margin-bottom: 24px;
+        text-decoration: none;
+        color: #242424;
+        line-height: 40px;
+        cursor: pointer;
+      }
+      .title:hover{
+        text-decoration-line: underline;
+        color: #E60077;
+        cursor: pointer;
+      }
+      .clock{
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+      }
+      .date, .time {
+        font-family: 'Hind';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: #6E6E6E;
+      }
+      .dateLine{
+        background-color: #EDEDED;
+        height: 24px;
+        width: 1px;
+        margin: 0 16px;
+      }
+      .authorDiv{
+        margin-top: 20px;
+      }
+      .authImg {
+        margin-right: 8px;
+        border-radius: 50%;
+        height: 48px;
+      }
+      .excerpt{
+        font-family: 'Hind';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #242424;
+      }
+      .tags{
+        font-family: 'Hind';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: #E00074;
+        padding: 5px 8px;
+        background: rgba(230, 0, 119, 0.02);
+        border-radius: 2px;
+        width: max-content;
+        margin-bottom: 13px;
+      }
+    }
+  }
+  .blogList{
+    padding: 63px 126px;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .article-wrapper {
+      margin: auto;
+      // justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .blog-articles {
+      margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    margin-left: 12px;
+    margin-right: 12px;
+      .mainImg{
+        width: 100%;
+        margin-bottom: 18px;
+      }
+      .title{
+        font-family: 'Hind';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        margin-top: 12px;
+        margin-bottom: 14px;
+        text-decoration: none;
+        color: #242424;
+        line-height: 40px;
+        cursor: pointer;
+      }
+      .title:hover{
+        text-decoration-line: underline;
+        color: #E60077;
+        cursor: pointer;
+      }
+      .clock{
+        display: flex;
+        align-items: center;
+      }
+      .dateLine{
+        background-color: #EDEDED;
+        height: 16px;
+        width: 1px;
+        margin: 0 8px;
+      }
+      .date, .time {
+        font-family: 'Hind';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #6E6E6E;
+      }
+      .authorDiv{
+        margin-top: 20px;
+      }
+      .authImg {
+        margin-right: 8px;
+        border-radius: 50%;
+        height: 32px;
+      }
+      .tags{
+        font-family: 'Hind';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: #E00074;
+        padding: 5px 8px;
+        background: rgba(230, 0, 119, 0.02);
+        border-radius: 2px;
+        width: max-content;
+      }
+    }
+  }
+  .tabButton{
+    max-width: 1110px;
+    margin: auto;
+    .buttonTab{
+      width: 100%;
+      height: 48px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+      border: none;
+      font-family: 'Hind';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+      color: #E60077;
+    }
+  }
+}
+@media only screen and (max-width: 1281px) {
+  .blog-wrapper .blogList .blog-articles {
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media only screen and (max-width: 1281px) {
+  .blog-wrapper .blogList .blog-articles {
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media only screen and (max-width: 1227px) {
+  .blog-wrapper {
+    .tabButton {
+      max-width: 1110px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    .blogList {
+      padding: 63px 126px;
+      max-width: 1410px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+@media only screen and (max-width: 1102px) {
+  .blog-wrapper {
+
+    .blogList {
+      padding: 63px 126px;
+      max-width: 1260px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .blog-wrapper .featureList .feature-articles {
+    display: flex;
+    margin: auto;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    max-width: 840px;
+    padding-top: 64px;
+    padding-bottom: 65px;
+    .img {
+      align-self: unset;
+    }
+  }
+  .blog-wrapper .featureList {
+    padding: 0 75px;
+  }
+  .blog-wrapper .blogNav{
+    padding: 154px 75px 29px;
+    .blogLinks {
+      display: none;
+    }
+  }
+  .blog-wrapper .blogNav .navContent .dropdownMenu {
+    display: flex;
+  }
+  .blog-wrapper .blogList {
+    padding: 63px 60px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .blog-wrapper .blogList .blog-articles {
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .blog-wrapper .featureList {
+    padding: 0 20px;
+  }
+  .blog-wrapper .blogNav{
+    padding: 154px 20px 29px;
+    .blogLinks {
+      display: none;
+    }
+  }
+  .blog-wrapper .blogList {
+    padding: 20px 20px;
+    justify-content: center;
+  }
+  .blog-wrapper .blogList .blog-articles {
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
