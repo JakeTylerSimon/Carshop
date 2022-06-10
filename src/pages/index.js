@@ -2,6 +2,10 @@ import React, { useRef } from 'react'
 import Layout from '../components/layout'
 import { Helmet } from 'react-helmet';
 import Tools from '../images/tools.png'
+import { FaTools } from "react-icons/fa";
+import { BsTools } from "react-icons/Bs";
+import { AiFillFormatPainter } from "react-icons/Ai";
+import { AiOutlineCar } from "react-icons/Ai";
 
 const RootIndex = () => {
 
@@ -29,28 +33,24 @@ const RootIndex = () => {
         <div class="featureCallout">
             <div class="features">
                 <div class="feature">
-                    <img src="/images/DriveyLinks.png" />
-                    <h3>DRVY Shortcuts</h3>
-                    <h4>ORGANIZE FILES, FOLDERS, AND WEB LINKS ACROSS ANY CLOUD DRIVE</h4>
-                    <p>Organizing files shared with you in one drive provider is annoying enough, but across multiple clouds?! Forget it. With new .drvy links you can finally organize your content across any drive, no matter what cloud storage provider. You can even add web links to keep non-files organized together.</p>
+                    <FaTools/>
+                    <h3>Oil Change</h3>
+                    <p>If you change your oil regularly your car will have proper lubrication that reduces the amount of heat produced by the engine. Oil changes also get rid of dirt and debris, which makes your engine run slower. If your engine heats up because of old oil, it will wear down and eventually stop working properly.</p>
                 </div>
                 <div class="feature">
-                <img src="/images/Multi-DriveSearch.png" />
-                    <h3>Multi-drive search</h3>
-                    <h4>FIND FILES FASTER WITH FILTERABLE, CROSS-CLOUD SEARCH</h4>
-                    <p>Move your files from OneDrive to Google Drive, or Google Drive to Dropbox, or Dropbox to OneDrive. With our intuitive interface, you can easily organize all of your files no matter the provider.</p>
+                    <BsTools/>
+                    <h3>Wheel Alignment</h3>
+                    <p>The goal of an alignment is to re-optimize the angles of your wheels to each other, and to the road. This is done because a misaligned vehicle affects the way your vehicle drives, affects the stress on larger vehicle components such as your suspension, affects tire wear, and affects gas mileage.</p>
                 </div>
                 <div class="feature">
-                <img src="/images/Multi-DriveTransfer.png" />
-                    <h3>Cross-drive Transfer </h3>
-                    <h4>TRANSFER FILES AND FOLDERS TO ANY DRIVE WITH EASE</h4>
-                    <p>Drivey's search allows you to search across any attached drive from Google Drive, OneDrive, Dropbox personal, or Dropbox business. Advanced filters help you to find the files you need faster.</p>
+                    <AiOutlineCar/>
+                    <h3>Body Repair</h3>
+                    <p>The first thing that is considered again is the cost to repair or replace each part. Body work is like sculpting and requires great skill and repairing a body part on a car can usually be done no matter how bad the damage is. However, the hourly rate to do a repair may be more than the part to be replaced.</p>
                 </div>
                 <div class="feature">
-                <img src="/images/EncryptAndBackup.png" />
-                    <h3>Encrypt & Backup</h3>
-                    <h4>KEEP SENSITIVE INFORMATION SECURE AND BACKED UP</h4>
-                    <p>Drivey provides advanced security features like 256 bit encryption, and off-site cold storage backups to give you added piece of mind about the security of your cloud storage files.</p>
+                    <AiFillFormatPainter/>
+                    <h3>Fresh Paint Job</h3>
+                    <p>A quality paint job not only makes your car look like new but also protects it against common damages that can destroy your car's lush finish with time. UV-protected paint that doesn't peel or bubble is ideal for protecting your car against the sun.</p>
                 </div>
             </div>
         </div>
