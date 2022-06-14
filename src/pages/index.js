@@ -3,9 +3,9 @@ import Layout from '../components/layout'
 import { Helmet } from 'react-helmet';
 import Tools from '../images/tools.png'
 import { FaTools } from "react-icons/fa";
-import { BsTools } from "react-icons/bs";
-import { AiFillFormatPainter } from "react-icons/ai";
-import { AiOutlineCar } from "react-icons/ai";
+// import { BsTools } from "react-icons/bs";
+// import { AiFillFormatPainter } from "react-icons/ai";
+// import { AiOutlineCar } from "react-icons/ai";
 
 const RootIndex = () => {
 
@@ -38,17 +38,17 @@ const RootIndex = () => {
                     <p>If you change your oil regularly your car will have proper lubrication that reduces the amount of heat produced by the engine. Oil changes also get rid of dirt and debris, which makes your engine run slower. If your engine heats up because of old oil, it will wear down and eventually stop working properly.</p>
                 </div>
                 <div class="feature">
-                    <BsTools/>
+                    <FaTools/>
                     <h3>Wheel Alignment</h3>
                     <p>The goal of an alignment is to re-optimize the angles of your wheels to each other, and to the road. This is done because a misaligned vehicle affects the way your vehicle drives, affects the stress on larger vehicle components such as your suspension, affects tire wear, and affects gas mileage.</p>
                 </div>
                 <div class="feature">
-                    <AiOutlineCar/>
+                    <FaTools/>
                     <h3>Body Repair</h3>
                     <p>The first thing that is considered again is the cost to repair or replace each part. Body work is like sculpting and requires great skill and repairing a body part on a car can usually be done no matter how bad the damage is. However, the hourly rate to do a repair may be more than the part to be replaced.</p>
                 </div>
                 <div class="feature">
-                    <AiFillFormatPainter/>
+                    <FaTools/>
                     <h3>Fresh Paint Job</h3>
                     <p>A quality paint job not only makes your car look like new but also protects it against common damages that can destroy your car's lush finish with time. UV-protected paint that doesn't peel or bubble is ideal for protecting your car against the sun.</p>
                 </div>
