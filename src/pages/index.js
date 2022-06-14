@@ -3,9 +3,9 @@ import Layout from '../components/layout'
 import { Helmet } from 'react-helmet';
 import Tools from '../images/tools.png'
 import { FaTools } from "react-icons/fa";
-import { BsTools } from "react-icons/Bs";
-import { AiFillFormatPainter } from "react-icons/Ai";
-import { AiOutlineCar } from "react-icons/Ai";
+import { BsTools } from "react-icons/bs";
+import { AiFillFormatPainter } from "react-icons/ai";
+import { AiOutlineCar } from "react-icons/ai";
 
 const RootIndex = () => {
 
