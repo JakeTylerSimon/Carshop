@@ -11,7 +11,7 @@ const Navigation = () => {
           <a className='logo' href="/"/>
         </div>
         <ul className="app_navbar-links" >
-          <a className='navbarLinks' href="/">Services</a>           
+          <a className='navbarLinks' href="/service">Services</a>           
           <a className='navbarLinks' href="/parts">Parts</a>    
           <a className='navbarLinks' href="/contact">Contact</a>       
           <a className='navbarLinks' href="/login">login</a>       
@@ -28,7 +28,7 @@ const Navigation = () => {
               </div>
               <img src="/images/closeOutIcon.png" alt="" className='overlay_close' onClick={() => setToggleMenu(false)} />
               <ul className='app_navbar-smallscreen_links'>
-                <li className='navLinks' ><a href="/services">Services</a></li>
+                <li className='navLinks' ><a href="/service">Services</a></li>
                 <li className='navLinks' ><a href="/parts">Parts</a></li>
                 <li className='navLinks' ><a href="/contact">Contact</a></li>
               </ul>

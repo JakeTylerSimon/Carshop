@@ -468,16 +468,18 @@ body {
   background-color: black;
     h1 {
       font-style: normal;
-      font-family: 'Hindu';
+      font-family: "Hindu";
       font-weight: normal;
       font-size: 64px;
       line-height: 64px;
       width: 95%;
       margin: auto auto 26px auto;
-      text-align: center;
+      text-align: right;
       color: orangered;
-      text-shadow: 2px 2px #ff0000;
-      max-width: 738px;
+      // text-shadow: 2px 2px #ff0000;
+      /* max-width: 738px; */
+      position: relative;
+      top: -100px;
       @media only screen and (max-width:1000px) {font-size: 32px;
         line-height: 40px;}
     }
@@ -500,10 +502,11 @@ body {
       line-height: 32px;
       width: 95%;
       margin: auto auto 42px auto;
-      text-align: center;
+      text-align: right;
       color: orangered;
-      // text-shadow: 2px 2px white;
-      max-width: 738px;
+      position: relative;
+      /* max-width: 738px; */
+      top: -100px;
       @media only screen and (max-width:1000px) {font-size: 16px;
         line-height: 24px;}
       }
@@ -520,6 +523,11 @@ body {
         width: 80%;
       }
     }
+  }
+  .video {
+    display: flex;
+    margin: auto;
+    justify-content: center;
   }
   h2 {
     text-align: center;
@@ -649,6 +657,14 @@ body {
         width: 70px;
         margin-left: 40px;
         margin-right: 40px;
+      }
+      .serviceImg {
+        padding-left: 100px;
+        margin: 0;
+        width: 80%;
+      }
+      .imgService {
+        padding-top: 25px;
       }
     }
   }

@@ -3,9 +3,7 @@ import Layout from '../components/layout'
 import { Helmet } from 'react-helmet';
 import Tools from '../images/tools.png'
 import { FaTools } from "react-icons/fa";
-// import { BsTools } from "react-icons/bs";
-// import { AiFillFormatPainter } from "react-icons/ai";
-// import { AiOutlineCar } from "react-icons/ai";
+import { Booking } from '../components/booking';
 
 const RootIndex = () => {
 
@@ -19,14 +17,14 @@ const RootIndex = () => {
         <div class="wrapper">
             <div class="hero">
                 <h1>Grease Garage</h1>
-                <p>The best car service shop around</p>
+                <p>The best car shop around</p>
             </div>
         </div>
       
         <div class="centeredCallout">
           <div class="contain">
             <h2>About Grease Garage</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Here at Grease garage we value commitment, friendly helpfulness and extreme care we put into our customers and their vehicles. We specialize on domestic made vehicles and we guarentee to get the car looking and running brand new like it was coming right off the lot. </p>
             <img src={Tools} alt="" />
           </div>
         </div>
@@ -58,7 +56,7 @@ const RootIndex = () => {
           <div class="contain">
             <h2>Enjoy a better driving experience today!</h2>
             <p>You don't even need to create an account, just contact us or set up an appointment to get your car serviced.</p>
-            {/* put calnder here */}
+            <Booking/>
             </div>
         </div>
       </Layout>
