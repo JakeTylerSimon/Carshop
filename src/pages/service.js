@@ -10,6 +10,7 @@ const RootIndex = () => {
   return (
     <Layout>
       <Helmet>
+        <title>Services</title>
         <script
           type="text/javascript"
           id="hs-script-loader"

@@ -1,6 +1,7 @@
 import React from "react"
 import "./global.scss"
 import './variables.css'
+import '../index.css'
 
       import Navigation from './navigation'
       import Footer from './footer'

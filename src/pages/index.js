@@ -12,6 +12,7 @@ const RootIndex = () => {
     return (
       <Layout >
       <Helmet>
+        <title>Grease Garage</title>
         <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/21995803.js"></script>
       </Helmet>
         <div class="wrapper">

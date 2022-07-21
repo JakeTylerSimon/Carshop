@@ -12,11 +12,12 @@ const RootIndex = () => {
                         <h2 className='login-h2'>Admin Login</h2>
                         <input type="text" class="field" placeholder="Email"/>
                         <input type="password" class="field" placeholder="Password"/>
-                        <button class="btn">Log In</button>
+                        <button class="btn"><a href="/dashboard">Log In</a></button>
                     </div>
                 </div>
             </div>
             <Helmet>
+                <title>Admin Login</title>
                 <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/21995803.js"></script>
             </Helmet>
         </Layout>
