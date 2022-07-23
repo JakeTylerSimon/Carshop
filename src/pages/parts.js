@@ -148,7 +148,7 @@ export default function RootIndex() {
                         <div className='clock'>
                             <span className='date'>{part.price}</span>
                         </div>
-                      <button>Buy Now</button>
+                      <button className='buyNow'>Buy Now</button>
                     </div>
                   })}
               </div>

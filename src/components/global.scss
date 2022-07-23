@@ -784,6 +784,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	padding: 75px 100px;
+  margin: auto;
 }
 
 .containery:after{
@@ -894,6 +895,7 @@ textarea{
 	justify-content: center;
 	align-items: center;
 	padding: 75px 100px;
+  margin: auto;
 }
 
 .container:after{
@@ -1184,6 +1186,10 @@ textarea{
         display: flex;
         align-items: center;
       }
+      .buyNow{
+        background-color: red;
+        color: white;
+      }
       .dateLine{
         background-color: #EDEDED;
         height: 16px;
@@ -1347,4 +1353,9 @@ textarea{
     flex-direction: column;
     width: 100%;
   }
+}
+
+.buyNow {
+  background-color: red;
+  color: white;
 }

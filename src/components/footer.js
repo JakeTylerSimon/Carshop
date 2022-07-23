@@ -28,7 +28,7 @@ const Footer = () => (
                 <a href="/login">login</a>
               </div>
               <div className="social">
-                <a href="https://www.facebook.com/"><FaFacebookF/></a>
+                <a href="https://www.facebook.com/profile.php?id=100081927192916"><FaFacebookF/></a>
                 <a href="https://www.instagram.com/"><FaInstagram/></a>
                 <a href="https://twitter.com/"><FaTwitter/></a>
               </div>

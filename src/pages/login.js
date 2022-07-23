@@ -12,7 +12,7 @@ const RootIndex = () => {
                         <h2 className='login-h2'>Admin Login</h2>
                         <input type="text" class="field" placeholder="Email"/>
                         <input type="password" class="field" placeholder="Password"/>
-                        <button class="btn"><a href="/dashboard">Log In</a></button>
+                        <button class="btn"><a href="https://carshop-dashboard.vercel.app/">Log In</a></button>
                     </div>
                 </div>
             </div>
