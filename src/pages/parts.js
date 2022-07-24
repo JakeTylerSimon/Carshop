@@ -3,8 +3,14 @@ import Dropdown from 'react-bootstrap/Dropdown'
 import { Helmet } from "react-helmet";
 import Layout from '../components/layout'
 import queryString from 'query-string';
+import StripeCheckout from 'react-stripe-checkout'
+import axios from 'axios'
+// import {toast} from 'react-toastify'
+import { Alert } from 'react-bootstrap';
 
 export default function RootIndex() {
+
+  // toast.configure();
 
     const [visible, setVisible] = useState(9);
 
@@ -47,6 +53,7 @@ export default function RootIndex() {
 
       window.history.pushState(null,'',`${filter.toLowerCase()}`);
     }
+
 
     const parts = [
       {
@@ -102,6 +109,20 @@ export default function RootIndex() {
         img: 'https://i5.walmartimages.com/asr/392a5632-a292-4eef-902f-af3153ed5478_1.e09805c120e45cbb697a9d726bdbb1d9.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF'
       },
     ]
+
+    async function handleToken(token, addresses) {
+      const response = await axios.post('http://localhost:8000/checkout', {
+        token,
+        parts
+      });
+      const { status } = response.data
+      if(status === 'success') {
+        Alert('success! Check emails for details',
+        {type: 'success'})
+      } else{
+        Alert('Something went wrong', {type: 'error'});
+      }
+    }
   
   
     return filteredList != undefined ? (
@@ -148,7 +169,15 @@ export default function RootIndex() {
                         <div className='clock'>
                             <span className='date'>{part.price}</span>
                         </div>
-                      <button className='buyNow'>Buy Now</button>
+                      {/* <button className='buyNow'>Buy Now</button> */}
+                      <StripeCheckout 
+                        stripeKey='pk_test_51LP8idC4gbp1lXAVRpt67Msd87wtSw9NorN3rVbMMkg9E5Z45v8iYCNKAx7FKaQKREMwqkTMQpKQLM2TNic11j9V006knESQLM'
+                        token={handleToken}
+                        billingAddress
+                        shippingAddress
+                        amount={parts.price}
+                        name={parts.title}
+                      />
                     </div>
                   })}
               </div>
